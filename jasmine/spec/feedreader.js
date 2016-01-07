@@ -84,7 +84,7 @@ $(function () {
         it('content changes when new feed is loaded', function (done) {
             $('.feed').empty();
 
-            loadFeed(1, function() {
+            loadFeed(1, function () {
                 secondUrlEntries = $('.feed').find('.entry').find('h2').text();
                 expect(firstUrlEntries).not.toEqual(secondUrlEntries);
                 done();
